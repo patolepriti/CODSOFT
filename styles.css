@@ -1,0 +1,284 @@
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.header .navbar #close {
+  display: none;
+}
+nav {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: 1e110c;
+}
+.hello {
+  position: fixed;
+  height: auto;
+  left: 0px;
+}
+
+.header {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  z-index: 2;
+  background: 1e110c;
+  max-height: 6rem;
+}
+.navbar {
+  height: 20px; /* Adjust as necessary */
+  display: flex;
+  align-items: center; /* Vertically centers the items */
+}
+.navbar .img {
+  max-height: 20px; /* Adjust the value as needed */
+  height: auto; /* Maintains the aspect ratio */
+}
+.header logo img {
+  height: 5rem;
+}
+.header .navbar a {
+  font-size: 1.2rem;
+  margin-right: 2rem;
+  color: #979191;
+}
+.header .navbar a:hover {
+  color: #c57d26;
+}
+.header #menu {
+  display: none;
+}
+/*home*/
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  min-height: 100mvh;
+  align-items: center;
+  justify-content: center;
+  background: #1c120e;
+}
+.home .content {
+  flex: 1 1 40rem;
+}
+.home .content .title {
+  margin-top: 8rem;
+  font-size: 4rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.home .content .title span {
+  text-transform: uppercase;
+  color: #d3ad7f;
+}
+
+.home .content .description {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  line-height: 1.2;
+  padding: 1rem 0;
+  color: #fff;
+  margin-top: 1.5rem;
+}
+
+.home .content .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: #674c2b;
+  cursor: pointer;
+}
+
+.home .content .btn:hover {
+  letter-spacing: 0.2rem;
+}
+.home .image {
+  flex: 1 1 5rem;
+}
+.home .image img {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  width: 100;
+  max-height: 250px;
+  float: left;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+.header {
+  padding: 1rem;
+}
+section {
+  padding: 3rem;
+}
+
+@media (max-width: 786px) {
+}
+
+.about-us {
+  background: linear-gradient(to right, #6f5243, #ddc6aa);
+  padding: 50px 20px;
+  text-align: center;
+  color: #2a0a0a;
+}
+
+.about-us .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.about-us h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #1f0e0e;
+  text-underline-position: below;
+}
+
+.about-us .subtitle {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #1f0d0d;
+}
+
+.about-us p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #311515;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.read-more:hover {
+  background-color: #573838;
+}
+
+.menu-section {
+  padding: 50px 20px;
+  background-color: rgb(213, 203, 185);
+  text-align: center;
+}
+
+.menu-section h2 {
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+  color: #2a201c;
+  text-decoration: underline;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu-item {
+  background: #ba9c76;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.menu-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.menu-item span {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #c4a18e;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #2a1d17; /* Coffee brown color */
+  color: white;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-logo h2 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.footer-links {
+  margin: 20px 0;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.footer-links a {
+  color: rgb(239, 236, 233);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 0.9em;
+}
